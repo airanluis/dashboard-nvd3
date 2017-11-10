@@ -1,0 +1,35 @@
+<div class="widgets_section">
+	<div class="left_side">
+		<span> Seleccione un tipo de representación</span>
+		<div class="chart_list">
+			<input type="radio" id="line" ng-model="chartType" value="line"/>
+			<label for="line" class="lineChart"></label>
+			<input type="radio" id="bar" ng-model="chartType" value="bar"/>
+			<label for="bar" class="barChart"></label>
+			<input type="radio" id="pie" ng-model="chartType" value="pie"/>
+			<label for="pie" class="pieChart"></label>
+			<input type="radio" id="hbar" ng-model="chartType" value="hbar"/>
+			<label for="hbar" class="hbarChart"></label>
+		</div>
+	</div>
+	<div class="right_side">
+		<span> Introduzca su consulta</span>
+
+		<div ui-ace="{
+  			require: ['ace/ext/language_tools'],
+  			useWrapMode : true,
+  			showGutter: false,
+  			onLoad : aceLoaded
+		}" ng-model="query">
+		</div>
+		<div class="rightButton">
+			<input type="button" id="btn_query" value="Enviar consulta" ng-click="updateQuery()"/>
+		</div>
+	</div>
+	<div class="chart_preview">
+		<span> PREVISUALIZACIÓN</span>
+		<div class="chart_svg">
+			<nvd3 options='chart.options' data='chart.data'></nvd3>
+		</div>
+	</div>
+</div>

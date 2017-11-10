@@ -1,0 +1,35 @@
+
+section.home {
+	background: url(../img/bg_logIn.svg) no-repeat right bottom;
+	min-height: 100% !important;
+	text-align: center;
+		article { display: inline-block; margin-top: 15%;}
+		article.logIn {  max-width: 287px; padding: 0 5%; width: 90%;
+			form { display: inline-block; margin-top: 10%; max-width: 253px; overflow: hidden;
+				label { margin-bottom: 10px}
+				input[type="checkbox"] { margin-bottom: 30px; }
+				input[type="submit"] { margin-bottom: 30px; width: 100%}
+				a{font-size: 0.75em; text-decoration: underline}
+				.error {color: $c_memento; font-size: 0.8em; margin-bottom: 10px}
+			}
+		}
+		section.lightbox {
+			>article { max-width: 500px; padding: 18px 2.5%; position: relative; width: 95%;
+				h1 { line-height: 1.6em; margin-bottom: 10%}
+				form {
+					>label { margin-bottom: 7%}
+					input[type="email"] { margin-bottom: 7%; }
+					ul{ display: inline-bloc; list-style: none;
+						li{ display: inline;
+							input[type="submit"], a.button { margin: 0 3px 5%; width: 125px}
+						}
+					}
+				}
+			}
+		}
+	
+}
+
+@media screen and (min-width: 800px) {
+	
+}

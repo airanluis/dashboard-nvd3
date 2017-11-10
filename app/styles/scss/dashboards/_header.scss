@@ -1,0 +1,64 @@
+/**
+ * Header
+ */
+.row.header {
+    height: 80px;
+    color: $letter1;
+    margin-bottom: 15px;
+    border-bottom: 2px solid $mediumgrey;
+    background: -webkit-linear-gradient($c_header 90%, $c_memento2);
+    background: -moz-linear-gradient($c_header 90%, $c_memento2);
+    background: -o-linear-gradient($c_header 90%, $c_memento2);
+    background: linear-gradient($c_header 90%, $c_memento2); 
+    & > div:last-child {
+        padding-right: 0;
+    }
+    .meta {
+        height: auto;
+        line-height: 30px;
+        .page {
+            font-size: 20px;
+            padding-top: 11px;
+        }
+        .breadcrumb-links {
+            font-size: 14px;
+        }
+        div {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .login {
+        a {
+            padding: 18px;
+            display: block;
+        }
+    }
+    .logo {
+        min-width: 140px;
+        & > .item {
+            width: 130px;
+            height: 60px;
+            float: left;
+            display: inline-block;
+            text-align: center;
+            vertical-align: middle;
+            img {
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+.sessionPanel {
+   span {
+        line-height: 60px;
+    }
+}
+
+.logoMemento {
+    margin-left: 10px;
+    margin-top: 25px;
+    float:  left;
+}

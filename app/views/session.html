@@ -1,0 +1,71 @@
+<div id="page-wrapper" ng-class="{'active': toggle}" ng-cloak>
+
+    <!-- Sidebar -->
+
+    <div id="sidebar-wrapper">
+      <ul class="sidebar">
+        <li class="sidebar-main">
+          <a ng-click="toggleSidebar()">
+          <div class="sessionPanel">
+            <div class="logoMemento">
+              <svg width="24" height="25">
+                  <image xlink:href="img/isotipo.svg" src="img/isotipo.png" width="24" height="25"/>
+              </svg>
+            </div>
+              <span class="user">{{ username }}</span>
+              <span class="menu-icon glyphicon glyphicon-transfer"></span>
+          </div>
+          </a>
+          <div>            
+        </li>
+        <li class="sidebar-title"><span>menú</span></li>
+        <li class="sidebar-list menu_active">
+          <a ui-sref="session.widgets">Widgets <span class="menu-icon fa fa-tachometer"></span></a>
+        </li>
+        <li class="sidebar-list">
+          <a ui-sref="session.dashboards">Dashboards <span class="menu-icon fa fa-table"></span></a>
+        </li>
+      </ul>
+      <div class="sidebar-footer">
+        <div>
+         <a ng-click="logout()">
+            Cerrar sesión
+         </a>
+       </div>
+      </div>
+    </div>
+
+    <!-- End Sidebar -->
+
+    <div id="content-wrapper">
+      <div class="page-content">
+
+        <!-- Header Bar -->
+
+        <div class="row header">
+          <div class="col-xs-12">
+            <div class="logo pull-right">
+              <div class="item">
+                  <img src="{{ logoUrl }}">
+              </div>
+            </div>
+            <div class="meta">
+              <div class="page">
+                Widgets
+              </div>
+              <div class="breadcrumb-links">
+                Home / Widgets
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- End Header Bar -->
+
+        <!-- Main Content -->
+        <section class="page-content" data-ui-view></section>
+      </div><!-- End Page Content -->
+    </div><!-- End Content Wrapper -->
+  </div><!-- End Page Wrapper -->
+
+  

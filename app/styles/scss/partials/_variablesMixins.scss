@@ -1,0 +1,51 @@
+/*variables*/
+
+$darkgrey: #3c4440;
+$mediumgrey: #adafae;
+$softgrey: #f1f1f1;
+$white: #fff;
+//$c_memento: #be5237;
+$c_memento: #DA5132;
+
+@mixin icoWhite{
+	background: url(../img/icos_white.png);
+	display: block;
+	height: 16px;
+	width: 16px;
+}
+
+@mixin navMenuOptions($widthNav, $positiontopNav, $positionleftNav){
+	display:none;
+	width:$widthNav;
+	position:absolute;
+	top:$positiontopNav;
+	left:$positionleftNav;
+	background-color:$grayDarker; 
+	ul{
+		padding:10px;
+		li{
+			background:none;
+			float:none!important;
+			height:auto!important;
+			width:auto!important;
+			margin:0!important; 
+			span{
+				color:white;
+				font-size:12px!important;
+				font-weight:normal;
+				&:hover{
+					text-decoration: underline;
+					&:before{text-decoration: none;}
+				}
+			}
+		}
+	}
+}
+
+@mixin scrollPane{
+	.mCSB_container{margin-right:0;}
+	.mCSB_draggerContainer{margin:0;width: 10px;}
+	.mCSB_scrollTools{width:10px}
+	.mCSB_draggerRail{width:10px;}
+	.mCSB_dragger_bar{width:10px;}
+}

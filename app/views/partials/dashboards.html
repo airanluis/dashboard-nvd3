@@ -1,0 +1,24 @@
+<div gridster="gridsterOptions">
+	<ul>
+		<li gridster-item="widget" ng-repeat="widget in dashboard.widgets">
+			<div class="box" ng-controller="customWidgetController">
+				<div class="box-header">
+					<h3>{{ widget.name }}</h3>
+					<div class="box-header-btns pull-right">
+						<a title="settings" ng-click="openSettings(widget)"><i class="glyphicon glyphicon-cog"></i></a>
+						<a title="Remove widget" ng-click="remove(widget)"><i class="glyphicon glyphicon-trash"></i></a>
+					</div>
+				</div>
+				<div class="box-content">
+					<ul>
+						<li ng-repeat="chart in widget.charts" ng-controller="chartController">
+							<div class="chart_svg" ng-init="createChart(chart)">
+								<nvd3 options='chart.options' data='chart.data'></nvd3>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

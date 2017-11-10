@@ -1,0 +1,181 @@
+{
+
+	"changePeriod": {
+		"year": "Debe seleccionar un año",
+		"month": "Debe seleccionar un mes",
+		"week": "Debe seleccionar una semana",
+		"day": "Debe seleccionar un día"
+	},
+
+	"chart": {
+		"noContent": ""
+	},
+
+	"customer": {
+		"logo": {
+			"alt": "Customer logo"
+		}
+	},
+
+	"dashboard": {
+		"actions": {
+			"create": "Crear dashboard",
+			"delete": "Eliminar dashboard",
+			"duplicate": "Duplicar dashboard",
+			"showAll": "Ver todos los dashboards"
+		},
+		"title": "Dashboard",
+		"footer": "Footer",
+		"showDashboardsList": "Ver todos los dashboards",
+		"exportDashboard": "Exportar",
+		"printDashboard": "Imprimir"
+	},
+
+	"dashboardList": {
+		"name": "Nombre",
+		"create": "Nuevo dashboard",
+		"creationDate": "Fecha de creación",
+		"delete": "Eliminar",
+		"edit": "Editar",
+		"filterPlaceHolder": "Nombre del dashboard",
+		"listing": {
+			"thirdParty": {
+				"title": "Dashboards de otros usuarios",
+				"name": "Nombre",
+				"owner": "Propietario",
+				"show": "Ver"
+			}
+		},
+		"modificationDate": "Fecha de modificación",
+		"noDashboards": "No hay dashboards disponibles",
+		"noDashboardsFilter": "No se han encontrado coincidencias",
+		"search": {
+			"placeholder": "Nombre del dashboard"
+		},
+		"show": "Ver",
+		"title": "Listado de Dashboard disponibles"
+	},
+
+	"dashboardButtonAction": {
+		"create": "Crear nuevo dashboard"
+	},
+
+	"dashboardCreateModal": {
+		"create": "Continuar",
+		"cancel": "Cancelar",
+		"back": "Volver",
+		"errorValidation": "* Debe introducir un nombre.",
+		"errorTitleMsg": "* El dashboard no se ha podido crear porque se ha detectado un error:",
+		"errorPeriodMsg": "* Debe seleccionar un periodo",
+		"dashboardTitle": "Nombre del dashboard",
+		"legend1": "Introduzca el nombre del dashboard, seleccione la composición de widgets y a continuación pulse el botón",
+		"legend2": "Continuar"
+	},
+
+	"listings": {
+		"items": "items"
+	},
+
+	"login": {
+		"msgIndication": "Introduzca su usuario y contraseña para acceder a Memento",
+		"wrongPass": "* Su usuario o contraseña no son válidos",
+		"dontCloseSession": "No cerrar sesión",
+		"name": "Nombre",
+		"password": "Contraseña",
+		"dontRememberDataAccess": "No recuerdo mis datos de acceso",
+		"buttonLogin": "Iniciar sesión",
+		"recoverDataAccess": "Recuperar datos de acceso",
+		"recoverIndications": "Introduzca su correo electrónico asociado a su perfil de Memento y pulse 'Continuar', recibirá un correo con las instrucciones para recuperar sus datos de acceso.",
+		"email": "Correo electrónico",
+		"buttonCancel": "Cancelar",
+		"buttonContinue": "Continuar",
+		"recoverDataSuccess": "El correo se ha enviado correctamente a su cuenta, siga las instrucciones para recuperar sus datos de acceso.",
+		"buttonClose": "Cerrar",
+		"tokenExpiredMessage": "Lo sentimos pero sus permisos para acceder a estos dashboards han caducado. Para volver a disponer de ellos es necesario realizar de nuevo el proceso de acceso desde la aplicación de origen."
+	},
+
+	"months": [
+		"Enero",
+		"Febrero",
+		"Marzo",
+		"Abril",
+		"Mayo",
+		"Junio",
+		"Julio",
+		"Agosto",
+		"Septiembre",
+		"Octubre",
+		"Noviembre",
+		"Diciembre"
+	],
+
+	"days": [
+		"Lunes",
+		"Martes",
+		"Miercoles",
+		"Jueves",
+		"Viernes",
+		"Sabado",
+		"Domingo"
+	],
+
+	"week": "Semana",
+
+	"NoData": "N/D",
+
+	"pagination": {
+		"itemsToShow": "Mostrar",
+		"showingFrom": "Mostrando del",
+		"showingTo": "al",
+		"fromTotal": "de",
+		"items": "items"
+	},
+
+	"periods": {
+		"daily": "Diario",
+		"weekly": "Semanal",
+		"monthly": "Mensual",
+		"yearly": "Anual"
+	},
+
+	"sendEmail": {
+		"title": "Introduzca las direcciones de correo de los destinatarios y seleccione el formato de archivo para envia el dashboard.",
+		"for": "Para:",
+		"subject": "Asunto:",
+		"image": "Imagen",
+		"selectFormat": "Seleccione el formato del archivo adjunto",
+		"msgText": "Texto del mensaje",
+		"cancelMsg": "Cancelar",
+		"sendMsg": "Enviar Correo",
+		"errorTitleMsg": "El correo no se ha enviado porque se han detectado los siguientes errores:",
+		"errorDestinationMsg": "Debe introducir un destinatario",
+		"errorEmailTo": "El email del destinatario no es válido",
+		"errorEmailCC": "El email introducido en copia no es válido",
+		"errorEmailBCC": "El email introducido en la copia oculta no es válido",
+		"errorFormatMsg": "Debe seleccionar un formato de archivo.",
+		"tail": "Enviado por memento"
+	},
+
+	"session": {
+		"close": "Cerrar sesión",
+		"title": "Dashboards"
+	},
+
+	"validation": {
+		"required": {
+			"username": "*El usuario es obligatorio",
+			"password": "*La contraseña es obligatoria"
+		}
+	},
+
+	"csv" : {
+		"metricName" : "Nombre de métrica",
+		"dimension" : "Dimensión",
+		"period" : "Periodo"
+	},
+
+	"alert": {
+		"emailOk": "El correo se ha enviado correctamente.",
+		"emailKo": "Se ha perdido la conexión con el servidor de correo, por favor espere unos minutos y vuelva a intentarlo nuevamente"
+	}
+}

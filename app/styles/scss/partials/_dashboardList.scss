@@ -1,0 +1,49 @@
+.container-fluid.dashboardList>div{
+	#panel-region{
+		.bt.newDashboard{margin:20px 40px 0 0;}
+	}
+	#filter-region{margin-bottom:10px}
+	#dashboards-me-region{margin-top:15px;}
+	#dashboards-shared-region{margin-top:40px;}
+	#dashboards-shared-region, #dashboards-me-region{
+		table tbody td:last-child,tbody td:nth-child(5),tbody td:nth-child(6) { 
+			background: url(../img/separator_darkgrey.png) no-repeat center left;
+		}
+	}
+}
+
+section.dashboardList {
+	h1{float:left}
+	h2{display: inline-block}
+	div>section {
+		h1+div{
+			float:right;
+			margin:19px 0 10px;
+			nav,#clientLogo{float:left;}
+			#clientLogo{width:100px;img{width:100%;height:auto;}}
+			.bt.newDashboard{
+				display:none; 
+				margin:0 90px 0 0;  
+			}	
+		}
+	}
+}
+
+.noDashboardList {
+	.filter-region .search{display:none}
+	.pagination-region{display:none}
+}
+
+.noDashboardList, .noDashboardListFilter {
+	.dashboards-region table{
+		thead{display:none}
+		tbody{
+			tr{
+				display:none;
+				&:first-child{display:block;}
+			}
+		}
+	} 
+}
+
+.dashboards-region{clear:both}

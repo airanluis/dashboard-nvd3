@@ -1,0 +1,38 @@
+  <article class="logIn">   
+    <div id="box-login"> 
+     <h1>
+      <svg width="287" height="78">
+        <image xlink:href="img/imagotipo.svg" src="img/imagotipo.png" width="283" height="78" />
+      </svg>
+    </h1>  
+      <div id="box-login-top">      
+          <form name="loginForm" ng-submit="submit()" autofill>
+              <!--span>Introduzca su usuario y contraseña para acceder a Memento</span-->
+              <fieldset>
+                <input type="text" id="username" ng-model="usernameInput" placeholder="username" class="form-text" required>
+              </fieldset>
+              <fieldset>
+                <input type="password" id="password" ng-model="passwordInput" placeholder="password" class="form-text" required>
+              </fieldset>
+              <input type="submit" id="loginSubmit" value="Iniciar sesión"/>
+            </form>
+      </div>
+      <div id="box-login-bottom">
+            <div id="footer-login">
+              <span>Recordarme</span>
+              <input id="remember" 
+              bs-switch 
+              ng-model="isRemember" 
+              type="checkbox" 
+              switch-active="{{ isActive }}"
+              switch-on-text="{{ onText }}"
+              switch-off-text="{{ offText }}"
+              switch-on-color="{{ onColor }}"
+              switch-off-color="{{ offColor }}"
+              switch-animate="{{ animate }}"
+              switch-size="{{ size }}">
+            </div>
+      </div>
+      
+    </div>
+  </article>

@@ -1,0 +1,107 @@
+//dashboardAddwidget
+
+ .dashboardAddwidget{
+	float:left;
+	display:block;
+	width:100%;
+	height:auto;
+
+	section ul{
+		list-style-type:none;
+		li.widget{
+			float:left;
+			display:block;
+			list-style-type: none;
+
+
+			.widget-info{
+					background:#f2f1f1;
+					width:100%;
+					height:12px;
+					padding:8px 0;
+					//margin:0 0 5px 0;
+					background: $softgrey;
+					.dragger{
+
+					}    
+					h5 {
+						float:left;
+						text-align:left; 
+						width:auto;
+						padding:0; 
+						font-size: 14px;
+					  font-weight:normal;
+					}
+
+					.widget-options{    
+						float:right;
+						width:auto;
+					    padding:5px 8px;
+					    cursor: pointer;
+						/*border-left:1px solid $darkgrey;*/
+						
+						li{
+							float:left;
+							width:16px;
+							height:16px;
+							margin:0 10px 0 0;
+							&:last-child {
+								margin:0;
+							}
+						}
+					}
+			}
+
+			//When is an empty widget
+			&.empty{
+				background:#f0efef;
+				border:1px #a7a8ac dashed;
+				margin:0px 1px;
+				margin-bottom: 4px;
+				cursor: pointer;
+
+				&:nth-child(11),&:nth-child(12),&:nth-child(13),&:nth-child(14){
+					width:249px;
+					height:142px;
+				}
+				&:nth-child(5),&:nth-child(6){
+					width:502px;
+					height:274px;
+				}
+				&:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),
+				&:nth-child(7),&:nth-child(8),&:nth-child(9),&:nth-child(10){
+					width:249px;
+					height:142px;
+				}
+
+			}
+			//when is complete
+			&.complete{
+				background:#fff;//this si atest color, change it to white
+				border:0;
+				//box-shadow: 2px 2px 2px;
+				margin:0px 1px;
+				margin-bottom: 4px;
+
+				// &:nth-child(4),&:nth-child(5){
+				// 	width:249px;
+				// 	height:135px;
+				// }
+				&:nth-child(5),&:nth-child(6){
+					width:502px;
+					height:274px;
+					@include widgetW500pxH274px;
+				}
+				&:nth-child(1),&:nth-child(2),&:nth-child(3),&:nth-child(4),
+				&:nth-child(7),&:nth-child(8),&:nth-child(9),&:nth-child(10){
+					width:249px;
+					height:142px;
+					@include widgetH140px;
+				}	
+			}
+		}
+	}
+}
+
+
+

@@ -1,0 +1,81 @@
+//Al should be desing using the main template class as a root.
+
+
+
+main{
+	display:block;
+	width:100%;
+	height:100%;
+	padding:0px;
+	margin:auto;
+	//background:#fff;
+	&.short{height: 800px;}
+}
+
+.sessionPage {
+	background-color: $white; 
+	height: 100%;
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	border: 0 none;
+}
+
+.sessionPage header{
+	width:1024px;
+	margin:auto;
+	display:block;
+	padding:0px;
+}
+
+#main-content {
+	height:960px;
+	width:1024px;
+	margin:auto;
+	display:block;
+	padding:0px;
+}
+
+.mainarea{
+	margin:auto;
+	display:block;
+	width:1014px;
+	margin:0px 5px;
+
+ 	ul {
+    	list-style-type: none;
+	}
+}
+
+input[type="button"] {
+	margin: 0;
+	padding: 5px 10px;
+	font-size: 13px;	
+	font-weight: bold;
+	border: 0;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+
+	-moz-box-shadow:1px 1px 1px $darkgrey;
+	-webkit-box-shadow:1px 1px 1px $darkgrey;
+	box-shadow:1px 1px 1px $darkgrey;
+
+	background-color: $c_memento;
+
+	color:#fff;
+	font-family:arial,helvetica,sans-serif;
+    padding: 10px 2px;
+	width: 124px;
+	text-align: center;
+}
+input[type="button"]:hover{
+	background: -moz-linear-gradient(90deg, #EB4701, $c_memento);
+	background: -webkit-gradient(linear, from($c_memento), to(#EB4701));
+	background: linear-gradient(#EB4701, $c_memento);
+
+	cursor: pointer;
+}
+
+
+
